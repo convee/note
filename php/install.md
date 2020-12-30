@@ -1,9 +1,3 @@
----
-title: "编译安装PHP"
-date: 2020-12-13
-comments: false
-tags: ["php"]
----
 ## 安装依赖包
 
 ```

@@ -1,10 +1,3 @@
----
-title: "Go 问题集"
-date: 2020-12-15
-comments: false
-tags: ["go"]
----
-
 ## Go 内置函数
 * close：主要用来关闭channel
 * len：用来求长度，比如string,array,slice,map,channel

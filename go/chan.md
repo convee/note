@@ -1,9 +1,3 @@
----
-title: "Go 管道"
-date: 2020-12-13
-comments: false
-tags: ["chan","go"]
----
 ## chan 数据结构：
 ```
 type hchan struct {
