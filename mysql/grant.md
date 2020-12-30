@@ -1,10 +1,3 @@
----
-title: "Mysql 创建用户与授权"
-date: 2020-12-13
-comments: false
-tags: ["mysql"]
----
-
 ## 创建用户
 ### 命令:
 ```

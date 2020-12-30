@@ -8,13 +8,13 @@ yum install -y gcc gcc-c++  make zlib zlib-devel pcre pcre-devel  libjpeg libjpe
 ```
 wget https://www.php.net/distributions/php-7.3.20.tar.gz
 ```
-## 解压
+## 解压安装包
 
 ```
 tar -xzvf php-7.3.20.tar.gz
 cd php-7.3.20
 ```
-## 配置
+## 编译参数配置
 
 ```
 ./configure --prefix=/usr/local/php7 --with-config-file-path=/usr/local/php7/etc --enable-inline-optimization --disable-debug --enable-fpm --with-fpm-user=www --with-fpm-group=www --disable-rpath --enable-soap --with-libxml-dir --with-xmlrpc --with-openssl  --with-mhash --with-pcre-regex --with-zlib --enable-bcmath --with-bz2 --enable-calendar --with-curl --enable-exif --with-pcre-dir --enable-ftp --with-gd --with-openssl-dir --with-jpeg-dir --with-png-dir --with-zlib-dir --with-freetype-dir --enable-gd-jis-conv --with-gettext --with-gmp --with-mhash --enable-mbstring --with-onig --enable-shared --enable-opcache --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-readline --with-iconv --enable-pcntl --enable-shmop --enable-sysvmsg --enable-sysvsem --enable-sysvshm --enable-sockets  --enable-zip --enable-wddx --with-pear
@@ -83,6 +83,7 @@ cp php-fpm.service /usr/lib/systemd/system/
 systemctl enable php-fpm
 ```
 * 重启测试一下看看自己服务器的 php-fpm 是否成功运行
+
 ## php别名设置
 * 新增 /usr/bin/php 文件
 * chmod u+x /usr/bin/php
