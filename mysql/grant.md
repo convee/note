@@ -7,6 +7,7 @@ CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 * username：用户名
 * host：用户可以登录的主机
 * password：用户登录密码，密码可以为空
+
 ### 例子：
 ```
 CREATE USER 'convee'@'localhost' IDENTIFIED BY '123456';
@@ -24,6 +25,7 @@ GRANT privileges ON databasename.tablename TO 'username'@'host'
 * privileges：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL
 * databasename：数据库名
 * tablename：表名，如果要授予该用户对所有数据库和表的相应操作权限则可用*表示，如*.*
+
 ### 例子:
 ```
 GRANT SELECT, INSERT ON test.user TO 'convee'@'%';
@@ -54,6 +56,7 @@ REVOKE privilege ON databasename.tablename FROM 'username'@'host';
 ```
 ### 说明:
 * privilege, databasename, tablename：同授权部分
+
 ### 例子:
 ```
 REVOKE SELECT ON *.* FROM 'convee'@'%';
