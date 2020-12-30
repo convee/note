@@ -1,9 +1,3 @@
----
-title: "Mysql 备份与恢复"
-date: 2020-12-13
-comments: false
-tags: ["mysql"]
----
 ## 恢复到指定数据库
 ```
 mysql -hhostname -uusername -ppassword databasename < backup.sql
