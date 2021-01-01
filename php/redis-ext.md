@@ -1,9 +1,3 @@
----
-title: "PHP Redis 扩展安装"
-date: 2020-12-13
-comments: false
-tags: ["php", "redis"]
----
 ## 下载源码
 ```
 wget https://github.com/phpredis/phpredis/archive/5.3.2.tar.gz

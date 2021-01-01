@@ -8,6 +8,11 @@
 * append：用来追加元素到数组、切片中，非线程安全
 * panic和recover：用来做错误处理
 
+## golang 中 new 和 make 的区别
+* make 仅用来分配及初始化类型为 slice、map、chan 的数据。new 可分配任意类型的数据.
+* new 分配返回的是指针，即类型 *Type。make 返回引用，即 Type.
+* new 分配的空间被清零, make 分配空间后，会进行初始化.
+
 ## 高效拼接字符串
 Go 语言中，字符串是只读的，也就意味着每次修改操作都会创建一个新的字符串。如果需要拼接多次，应使用 strings.Builder，最小化内存拷贝次数。
 ```go
