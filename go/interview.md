@@ -1,4 +1,4 @@
-# Go 问题集
+# Go 面试要点
 ## goroutine的实现
 ## Go 内置函数
 * close：主要用来关闭channel

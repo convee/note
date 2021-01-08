@@ -9,46 +9,46 @@
     * [数组](algorithm/array.md)
 
 * 计算机网络
-    * [计算网络问题集](network/faq.md)
+    * [计算网络面试要点](network/interview.md)
     
 * PHP
-    * [PHP 问题集](php/faq.md)
+    * [PHP 面试要点](php/interview.md)
     * [PHP 编译安装](php/install.md)
     * [PHP Redis 扩展安装](php/redis-ext.md)
 
     
 * Go
-    * [Go 问题集](go/faq.md)
+    * [Go 面试要点](go/interview.md)
     * [Go 切片](go/slice.md)
     * [Go 管道](go/chan.md)
 
 * Nginx
-    * [Nginx 问题集](nginx/faq.md)
+    * [Nginx 面试要点](nginx/interview.md)
 
     
 * Mysql
-    * [Mysql 问题集](mysql/faq.md)
+    * [Mysql 面试要点](mysql/interview.md)
     * [Mysql 备份与恢复](mysql/backup.md)
     * [Mysql 创建用户与授权](mysql/grant.md)
     * [Mysql 知识点](mysql/summary.md)
 
     
 * Redis
-    * [Redis 问题集](redis/faq.md)
+    * [Redis 面试要点](redis/interview.md)
 
 * Kafka
-    * [Kfaka 问题集](kafka/faq.md)
+    * [Kfaka 面试要点](kafka/interview.md)
 
     
 * Linux
-    * [Linux 问题集](linux/faq.md)
+    * [Linux 面试要点](linux/interview.md)
     * [IO 多路复用](linux/io.md)
 
 * 分布式
-    * [分布式问题集](distribution/faq.md)
+    * [分布式面试要点](distribution/interview.md)
 
     
 * 常用工具
-    * [常用工具问题集](tools/faq.md)
+    * [常用工具面试要点](tools/interview.md)
     * [ELK原理](tools/elk.md)
     * [Mac 下使用 Protobuf2.6.1](tools/mac-protobuf.md)
