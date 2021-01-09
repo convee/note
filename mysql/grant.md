@@ -33,9 +33,12 @@ GRANT ALL ON *.* TO 'convee'@'%';
 ```
 ### 注意:
 * 用以上命令授权的用户不能给其它用户授权，如果想让该用户可以授权，用以下命令:
+
+
 ```
 GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;
 ```
+
 ## 设置与更改用户密码
 ### 命令:
 ```
