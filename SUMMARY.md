@@ -42,7 +42,10 @@
     
 * Linux
     * [Linux 面试要点](linux/interview.md)
+    * [Linux 文件日志查询](linux/log.md)
+    * [Linux 命令行操作](linux/command.md)
     * [IO 多路复用](linux/io.md)
+    * [awk](linux/io.md)
 
 * 分布式
     * [分布式面试要点](distribution/interview.md)

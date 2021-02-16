@@ -150,7 +150,17 @@
     3. 其它数据库作为slave通过一个I/O线程与主服务器保持通信，并监控master的二进制日志文件的变化，
     4. 如果发现master二进制日志文件发生变化，则会把变化复制到自己的中继日志中，然后slave的一个SQL线程会把相关的“事件”执行到自己的数据库中，以此实现从数据库和主数据的一致性，也就实现了主从复制
 (主服务器把数据更新记录到二进制日志中，从服务器通过I/O thread向主库发起binlog请求，主服务器通过I/O dump thread把二进制日志传递给从库，从库通过I/O thread记录到自己的中继日志中。然后通过SQL thread应用中继日志中SQL的内容。)
+## 如何查看机器运行的建康指标，如：CPU的LOAD和使用率，内存使用率，磁盘使用率，IOWAIT等，除此之外还有那些重要指标可以用来分析特定场景问题？
+> yum install iotop iftop iostat htop 安装一系列工具 htop是top命令的加强版，可以看到cpu，内存，执行的进程等信息
 
+* iftop 是监控网卡的
+* iotop 是监控io的
+* free -m 监控可用内存
+* uptime 查看当前系统负载
+* df -hl 查看磁盘
+* 安装smart 工具yum install -y smartmontools,查看磁盘的smart信息smartctl -a /dev/sda
+* 查看cpu信息cat /proc/cpuinfo
+* 查看内存信息 cat /proc/meminfo
 ## **nginx**
 
 - LVS 和 Nginx 分别作用在 osi 哪一层？
@@ -223,6 +233,8 @@ sorted set多了一个权重参数score,集合中的元素能够按score进行�
 - Redis 如何实现持久化
     1. RDB 持久化，将 Redis 在内存中的的状态保存到硬盘中，相当于备份数据库状态。
     2. AOF 持久化（Append-Only-File），AOF 持久化是通过保存 Redis 服务器锁执行的写状态来记录数据库的。相当于备份数据库接收到的命令，所有被写入 AOF 的命令都是以 Redis 的协议格式来保存的
+
+    
 
 
 
